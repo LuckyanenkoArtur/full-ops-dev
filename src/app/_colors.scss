@@ -1,0 +1,25 @@
+:root {
+  --primary: #fbfffe;
+  --primary-70: color-mix(in srgb, #fbfffe 70%, transparent);
+
+  --secondary: #2e5eaa;
+  --secondary-70: color-mix(in srgb, #2e5eaa 70%, transparent);
+  --secondary-85: color-mix(in srgb, #2e5eaa 85%, transparent);
+
+  --accent: #6e7e85;
+  --error: #cc2936;
+  --text: #001514;
+}
+
+[data-theme="dark"] {
+  --primary: #070f2b;
+  --primary-70: color-mix(in srgb, #070f2b 70%, transparent);
+
+  --secondary: #9290c3;
+  --secondary-70: color-mix(in srgb, #9290c3 70%, transparent);
+  --secondary-85: color-mix(in srgb, #9290c3 85%, transparent);
+
+  --accent: #535c91;
+  --error: #cc2936;
+  --text: #fbfffe;
+}
