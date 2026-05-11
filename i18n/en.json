@@ -1,5 +1,11 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "home-section": {
+    "greetings-text": "Greetings",
+    "title": "I am <span>Arthur</span> and I am <span>Software Engineer</span>",
+    "position-text": "'{  Development, DevOps, System Administration...  }'",
+    "paragraph-text": "Designing and operating systems across the stack infrastructure, DevOps pipelines, full-stack applications,and system administration.",
+    "button": {
+      "text": "About me"
+    }
   }
 }
