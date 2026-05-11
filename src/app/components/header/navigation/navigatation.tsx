@@ -1,17 +1,26 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./navigation.module.scss";
+import { items, NavigationItem } from "./items";
 
 const Navigation = () => {
+  const [active, setActive] = useState<NavigationItem>("HOME");
+
   return (
-    <div>
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>SERVICES</li>
-        <li>EXPERTISE</li>
-        <li>CAREER</li>
-        <li>CONTACT</li>
-      </ul>
-    </div>
+    <ul className={styles["navigation-list"]}>
+      {items.map((item) => (
+        <li
+          key={item}
+          className={`${styles["navigation-item"]} ${
+            active === item ? styles.active : ""
+          }`}
+          onClick={() => setActive(item)}
+        >
+          {item}
+        </li>
+      ))}
+    </ul>
   );
 };
 
