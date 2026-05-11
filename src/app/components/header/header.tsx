@@ -13,8 +13,10 @@ const Header = () => {
     <div className={styles["header-container"]}>
       <Logo />
       <Navigation />
-      <ThemeToggle />
-      <LanguageSelection />
+      <div className={styles["cusomization-site-container"]}>
+        <ThemeToggle />
+        <LanguageSelection />
+      </div>
     </div>
   );
 };
