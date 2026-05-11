@@ -9,7 +9,25 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <h1>{t("title")}</h1>;
+      <section
+        style={{
+          width: "100vw",
+          height: "100vh",
+          background: "lightblue",
+        }}
+      >
+        <h1>{t("title")}</h1>;
+      </section>
+
+      <section
+        style={{
+          width: "100vw",
+          height: "100vh",
+          background: "lightgreen",
+        }}
+      >
+        <h1>{t("title")}</h1>;
+      </section>
     </main>
   );
 }

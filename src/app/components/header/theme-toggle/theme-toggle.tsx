@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import styles from "./theme-toggle.module.scss";
+import { SunIcon } from "./sun-icon";
+import { MoonIcon } from "./moon-icon";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -16,11 +18,9 @@ export default function ThemeToggle() {
 
   return (
     <button className={styles.toggle} onClick={toggleTheme}>
-      <img
-        src="/assets/icons/sun.svg"
-        className={`${styles.icon} ${styles.sun}`}
-        alt="light theme"
-      />
+      <div className={styles.sun}>
+        <SunIcon />
+      </div>
 
       <div
         className={`${styles.circle} ${
@@ -28,11 +28,9 @@ export default function ThemeToggle() {
         }`}
       />
 
-      <img
-        src="/assets/icons/moon.svg"
-        className={`${styles.icon} ${styles.moon}`}
-        alt="dark theme"
-      />
+      <div className={styles.moon}>
+        <MoonIcon />
+      </div>
     </button>
   );
 }

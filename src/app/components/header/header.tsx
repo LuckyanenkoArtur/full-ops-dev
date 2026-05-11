@@ -10,14 +10,14 @@ import styles from "./header.module.scss";
 const Header = () => {
   const t = useTranslations("HomePage");
   return (
-    <div className={styles["header-container"]}>
+    <header className={styles["header-container"]}>
       <Logo />
       <Navigation />
       <div className={styles["cusomization-site-container"]}>
         <ThemeToggle />
         <LanguageSelection />
       </div>
-    </div>
+    </header>
   );
 };
 
