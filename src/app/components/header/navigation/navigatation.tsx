@@ -7,6 +7,7 @@ import { items, NavigationItem } from "./items";
 // TODO: We need here refactoring
 // 1. Move logic into sepearat custom hook
 // 2. Reread code and make code cleare
+// 3. Remove selection for navigation items
 
 const Navigation = () => {
   const [active, setActive] = useState<NavigationItem>("HOME");

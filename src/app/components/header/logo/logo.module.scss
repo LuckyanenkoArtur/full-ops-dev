@@ -1,0 +1,20 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+  user-select: none;
+}
+
+.icon {
+  width: 2.125rem;
+  height: 2.125rem;
+  fill: var(--secondary);
+  user-select: none;
+}
+
+.text {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text);
+  user-select: none;
+}
