@@ -19,7 +19,6 @@
 
     .content-side {
       height: 32.6875rem;
-
       width: clamp(42.375rem, 45vw, 52rem);
 
       .social-button-container {
@@ -59,7 +58,6 @@
           transition: all 0.5s;
 
           font-size: 1.25rem;
-
           width: 14.4375rem;
           height: 4rem;
 
@@ -77,18 +75,15 @@
         color: var(--secondary);
 
         font-size: 1.375rem;
-
         padding-bottom: 0.9375rem;
       }
 
       .title {
         font-weight: var(--font-weight-bold);
         color: var(--text);
-
-        font-size: clamp(3.75rem, 4vw, 5rem);
-
         width: 100%;
 
+        font-size: clamp(3.75rem, 4vw, 5rem);
         line-height: 120%;
 
         span {
@@ -101,22 +96,16 @@
         color: var(--accent);
 
         font-size: 1.5rem;
-
         padding: 1.4375rem 0;
       }
 
       .paragraph-text {
         font-weight: var(--font-weight-regular);
         color: var(--text);
-
-        line-height: 120.8%;
-
+        line-height: 200.8%;
         font-size: 1.5rem;
-
         width: 100%;
-
         max-width: 40.5625rem;
-
         padding-bottom: 3rem;
       }
     }
