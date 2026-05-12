@@ -1,0 +1,66 @@
+.scroller-icon {
+  width: 3.125rem;
+  height: 3.125rem;
+
+  color: var(--secondary);
+
+  cursor: pointer;
+
+  animation: floating 2.5s ease-in-out infinite;
+
+  filter: drop-shadow(0 0 0.625rem var(--secondary-70));
+}
+
+.scroller-line {
+  animation: scroll-line 1.8s ease-in-out infinite;
+}
+
+.scroller-arrow {
+  animation: scroll-arrow 1.8s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-line {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0.375rem);
+  }
+}
+
+@keyframes scroll-arrow {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.125rem);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
