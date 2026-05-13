@@ -70,8 +70,8 @@ const HomeSection = () => {
   }, [text, isDeleting, currentIndex, positions]);
 
   return (
-    <section className={styles["home-section-container"]}>
-      <div className={styles["home-section-container-flex-wrapper"]}>
+    <section className={styles["home-section"]}>
+      <div className={styles["home-section-flex-wrapper"]}>
         <div className={styles["content-side"]}>
           <div className={styles["greetings-text"]}>{t("greetings-text")}</div>
 
@@ -118,7 +118,7 @@ const HomeSection = () => {
         </div>
       </div>
 
-      <div className={styles["home-section-container-scroller-container"]}>
+      <div className={styles["home-section-scroller-container"]}>
         <ScrollerIcon />
       </div>
     </section>

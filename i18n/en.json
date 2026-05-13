@@ -1,4 +1,5 @@
 {
+  "header": {},
   "home-section": {
     "greetings-text": "Greetings",
     "title": "I am <span>Arthur</span> and I am <span>Software Engineer</span>",
@@ -18,5 +19,15 @@
     "button": {
       "text": "About me"
     }
+  },
+
+  "about-section": {
+    "title": "About Me",
+    "paragraphs": [
+      "I’m Arthur, a DevOps engineer with more than 5 years of experience transforming ideas into intuitive and engaging digital experiences. Throughout my career, I’ve collaborated with startups, agencies, and forward-thinking individuals to create products that balance creativity, functionality, and user-centered design.",
+      "My approach goes beyond aesthetics. I focus on building experiences that feel natural, purposeful, and impactful—interfaces and systems that not only look refined but also solve real problems and create meaningful connections with users.",
+      "I’m working with development, DevOps, and architecture optimization to help products scale efficiently, improve workflows, and deliver reliable performance. From concept to execution, I believe every detail should contribute to a seamless and memorable experience..",
+      "I’m passionate about simplifying complex processes, optimizing systems and workflows, and helping teams find smarter ways to move from idea to successful product. Every project is an opportunity to create solutions that are efficient, scalable, user-focused, and built to make a lasting impact."
+    ]
   }
 }

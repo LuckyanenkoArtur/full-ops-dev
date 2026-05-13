@@ -1,0 +1,85 @@
+.about-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  //! ----------MOVE TO GLOBAL----------------
+  width: 100%;
+  max-width: 120rem; // 1920px
+  min-height: calc(100vh - 5rem); // subtract header height
+  padding: clamp(1.5rem, 3vw, 2rem) clamp(3rem, 5vw, 4.5rem)
+    clamp(1.5rem, 3vw, 2rem);
+  //! ----------------------------------------
+
+  .hero-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+
+    .hero-container {
+      position: relative;
+      background: var(--secondary-70);
+      width: 563px;
+      height: 470px;
+      border-radius: 36px;
+      //   overflow: visible; // important
+
+      img {
+        position: absolute;
+        bottom: 0; // anchor to bottom of container
+        left: 50%;
+        transform: translateX(-50%);
+
+        height: 756px; // your real image height
+        width: 100%;
+
+        object-fit: contain;
+        display: block;
+      }
+    }
+
+    .statistics-container {
+      display: flex;
+      align-items: center;
+      gap: 43px;
+
+      .card {
+        .counter {
+          font-weight: var(--font-weight-bold);
+          font-size: 36px;
+        }
+
+        .text {
+          font-size: var(--font-weight-regular);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .content-side {
+    //! -----Move to separate component called 'Title'-------
+    .title {
+      font-weight: var(--font-weight-bold);
+      color: var(--text);
+      font-size: 60px;
+      span {
+        color: var(--secondary);
+      }
+
+      padding-bottom: 38px;
+    }
+    //! --------------------------------------------------------
+
+    //! -----Move to separate component called 'Paragraph'-------
+    .paragraph-text {
+      font-weight: var(--font-weight-regular);
+      color: var(--text);
+      width: 702px;
+      font-size: 24px;
+      padding-bottom: 2rem;
+    }
+    //! ----------------------------------------------------------
+  }
+}

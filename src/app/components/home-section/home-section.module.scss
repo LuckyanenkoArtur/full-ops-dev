@@ -1,82 +1,67 @@
-.home-section-container {
+.home-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  gap: clamp(1.5rem, 3vh, 3rem);
 
+  //! ----------MOVE TO GLOBAL----------------
   width: 100%;
   max-width: 120rem; // 1920px
   min-height: calc(100vh - 5rem); // subtract header height
-
-  margin: 0 auto;
-
   padding: clamp(1.5rem, 3vw, 2rem) clamp(3rem, 5vw, 4.5rem)
     clamp(1.5rem, 3vw, 2rem);
-
-  gap: clamp(1.5rem, 3vh, 3rem);
-
-  overflow: hidden;
+  //! ----------------------------------------
 
   &-flex-wrapper {
     flex: 1;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     gap: clamp(2rem, 4vw, 7.5625rem);
-
     min-height: 0;
 
     .content-side {
-      width: clamp(38rem, 45vw, 52rem);
-
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       height: auto;
       min-height: 0;
+      width: clamp(38rem, 45vw, 52rem);
 
       .social-button-container {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
         gap: 2.125rem;
 
         .social-icons {
+          color: var(--secondary);
           display: flex;
           align-items: center;
           gap: 1.25rem;
 
-          color: var(--secondary);
-
           svg {
+            flex-shrink: 0;
             width: 2.5rem;
             height: 2.5rem;
-            flex-shrink: 0;
           }
         }
 
         .about-button {
           background: var(--primary);
           color: var(--secondary);
-
           font-weight: var(--font-weight-bold);
-
           border: solid var(--secondary);
-
           display: flex;
           align-items: center;
           justify-content: center;
-
           transition: all 0.5s;
-
           font-size: 1.25rem;
-
           width: 14.4375rem;
           height: 4rem;
-
           border-radius: 1.625rem;
 
           &:hover {
@@ -89,58 +74,47 @@
       .greetings-text {
         font-weight: var(--font-weight-bold);
         color: var(--secondary);
-
         font-size: clamp(1rem, 1.2vw, 1.375rem);
-
         margin-bottom: 0.75rem;
       }
 
+      //! -----Move to separate component called 'Title'-------
       .title {
         font-weight: var(--font-weight-bold);
         color: var(--text);
-
         width: 100%;
-
         font-size: clamp(3rem, 4vw, 5rem);
-
         line-height: 1.15;
-
         span {
           color: var(--secondary);
         }
       }
+      //! --------------------------------------------------------
 
       .position-text {
         font-weight: var(--font-weight-medium);
         color: var(--accent);
-
         font-size: clamp(1.125rem, 1.5vw, 1.5rem);
-
         padding: 1rem 0;
       }
 
+      //! -----Move to separate component called 'Paragraph'-------
       .paragraph-text {
         font-weight: var(--font-weight-regular);
         color: var(--text);
-
         width: 100%;
         max-width: 40.5625rem;
-
         line-height: 1.8;
-
         font-size: clamp(1rem, 1.2vw, 1.5rem);
-
         padding-bottom: 2rem;
       }
+      //! ----------------------------------------------------------
     }
 
     .hero-side {
       width: clamp(26rem, 32vw, 42rem);
-
       aspect-ratio: 522 / 514;
-
       flex-shrink: 0;
-
       max-height: 70vh;
 
       .hero-background {

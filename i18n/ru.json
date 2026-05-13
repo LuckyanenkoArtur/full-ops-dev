@@ -1,7 +1,7 @@
 {
   "home-section": {
     "greetings-text": "Приветствую",
-    "title": "Я <span>Артур</span>,<span>Инженер-программист</span>",
+    "title": "Я <span>Артур</span>, Я <span> Инженер-программист</span>",
 
     "positions": {
       "frontend": "Frontend-разработка...",
