@@ -6,11 +6,11 @@
     "positions": {
       "frontend": "Frontend Development...",
       "backend": "Backend Development...",
-      "devops": "DevOps...",
-      "uiux": "UI/UX Engineering...",
+      "devops": "DevOps Engineering...",
+      "uiux": "UI/UX Enthusiast...",
       "sysadmin": "System Administration...",
-      "sysarch": "System Architecture...",
-      "dbarch": "Database Architecture..."
+      "sysarch": "System Architecturing...",
+      "dbarch": "Database Architecturing..."
     },
 
     "paragraph-text": "Designing and operating systems across the stack infrastructure, DevOps pipelines, full-stack applications, and system administration.",

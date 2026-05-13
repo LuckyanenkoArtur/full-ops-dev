@@ -1,9 +1,7 @@
 "use client";
-// TODO: Fix the sizing for hero section accordin to design
-// TODO: Fix the scrolling container so that should be corrected no extra jiggle of vertical scroller
-// TODO: Fix position according to design
 // TODO: Fix the messanger icons sizing
 // TODO: Refactoring the code by moving logic out of compeont to custom hook
+// TODO: Add the clicable icons
 
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
