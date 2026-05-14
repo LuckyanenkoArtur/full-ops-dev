@@ -2,40 +2,65 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  // background-color: lightblue;
+  gap: 90px;
 
   //! ----------MOVE TO GLOBAL----------------
   width: 100%;
   max-width: 120rem; // 1920px
   min-height: calc(100vh - 5rem); // subtract header height
-  padding: clamp(1.5rem, 3vw, 2rem) clamp(3rem, 5vw, 4.5rem)
-    clamp(1.5rem, 3vw, 2rem);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: clamp(3rem, 5vw, 4.5rem);
+  padding-right: clamp(3rem, 5vw, 4.5rem);
   //! ----------------------------------------
 
   .hero-side {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 23px;
+    justify-content: flex-end;
+
+    gap: 70px;
 
     .hero-container {
       position: relative;
-      background: var(--secondary-70);
-      width: 563px;
-      height: 470px;
-      border-radius: 36px;
-      //   overflow: visible; // important
+
+      width: 566px;
+      height: 752px;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .hero-container-background {
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        width: 566px;
+        height: 468px;
+
+        background: var(--secondary-70);
+
+        border-radius: 36px;
+
+        z-index: 1;
+      }
 
       img {
         position: absolute;
-        bottom: 0; // anchor to bottom of container
-        left: 50%;
-        transform: translateX(-50%);
 
-        height: 756px; // your real image height
-        width: 100%;
+        bottom: 0;
+        left: 0;
+
+        width: 566px;
+        height: 751px;
 
         object-fit: contain;
-        display: block;
+
+        z-index: 2;
       }
     }
 
@@ -45,41 +70,51 @@
       gap: 43px;
 
       .card {
+        display: flex;
+        flex-direction: column;
+
         .counter {
           font-weight: var(--font-weight-bold);
           font-size: 36px;
+          color: var(--text);
         }
 
         .text {
-          font-size: var(--font-weight-regular);
+          font-weight: var(--font-weight-regular);
           font-size: 20px;
+          color: var(--text);
         }
       }
     }
   }
 
   .content-side {
-    //! -----Move to separate component called 'Title'-------
+    width: 702px;
+
     .title {
       font-weight: var(--font-weight-bold);
       color: var(--text);
+
       font-size: 60px;
+      line-height: 1.1;
+
+      padding-bottom: 20px;
+
       span {
         color: var(--secondary);
       }
-
-      padding-bottom: 38px;
     }
-    //! --------------------------------------------------------
 
-    //! -----Move to separate component called 'Paragraph'-------
     .paragraph-text {
       font-weight: var(--font-weight-regular);
       color: var(--text);
-      width: 702px;
+
       font-size: 24px;
-      padding-bottom: 2rem;
+      line-height: 1.45;
+
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
     }
-    //! ----------------------------------------------------------
   }
 }

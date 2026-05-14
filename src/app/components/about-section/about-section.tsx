@@ -1,4 +1,5 @@
 "use client";
+
 import { useTranslations } from "next-intl";
 
 import styles from "./about-section.module.scss";
@@ -12,8 +13,11 @@ const AboutSection = () => {
     <section className={styles["about-section"]}>
       <div className={styles["hero-side"]}>
         <div className={styles["hero-container"]}>
-          <img src={"/assets/images/hero-me-2.png"} alt="hero-image" />
+          <div className={styles["hero-container-background"]} />
+
+          <img src="/assets/images/hero-me-2.png" alt="hero-image" />
         </div>
+
         <div className={styles["statistics-container"]}>
           <div className={styles["card"]}>
             <div className={styles["counter"]}>10+</div>
